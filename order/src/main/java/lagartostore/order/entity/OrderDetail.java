@@ -1,9 +1,7 @@
 package lagartostore.order.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import lagartostore.order.dto.ProductDto;
 import lombok.Data;
 
 @Entity
@@ -16,6 +14,8 @@ public class OrderDetail {
     private Double price;
     private Double amount;
     private Integer productId;
+    @Transient
+    private ProductDto productDto;
 
     public OrderDetail() {
         this.price = (double) 0;
