@@ -1,6 +1,6 @@
 spring:
   application:
-    name: catalog-service
+    name: bus-catalog-service
   profiles:
     active: development
   config:

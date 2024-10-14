@@ -1,14 +1,12 @@
-server:
-  port: 8081
 spring:
   application:
-    name: order-service
+    name: bus-catalog-service
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
   datasource:
-    url: jdbc:mysql://localhost:3306/order
+    url: jdbc:mysql://localhost:3306/bus_catalog
     username: root
     password: ''
     driver-class-name: com.mysql.cj.jdbc.Driver

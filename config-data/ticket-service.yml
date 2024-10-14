@@ -1,19 +1,24 @@
 server:
-  port: 8082
+  port: 8081
 spring:
   application:
-    name: client-service
+    name: ticket-service
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
   datasource:
-    url: jdbc:mysql://localhost:3306/client
+    url: jdbc:mysql://localhost:3306/ticket
     username: root
     password: ''
     driver-class-name: com.mysql.cj.jdbc.Driver
 
-
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+    path: /doc/swagger-ui.html
 eureka:
   client:
     serviceUrl:
